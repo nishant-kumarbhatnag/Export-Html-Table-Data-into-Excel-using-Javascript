@@ -6,7 +6,7 @@ function exportToExcel(tableId){
 
 	let a = document.createElement('a');
 	a.href = `data:application/vnd.ms-excel, ${encodeURIComponent(tableData)}`
-	a.download = 'downloaded_file_' + getRandomNumbers() + '.xls'
+	a.download = 'downloaded_file_' + getRandomNumbers() + '.xlsx'
 	a.click()
 }
 function getRandomNumbers() {
